@@ -1,0 +1,90 @@
+.all-students-page {
+    font-family: $font_family_body;
+    article {
+        margin: 1rem auto;
+        max-width: 18rem;
+    }
+    a {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 40rem) {
+    .all-students-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 65rem;
+        margin: 0 auto;
+    }
+}
+
+// single student page
+.type-school-student {
+    position: relative;
+}
+.school-student .post-thumbnail {
+    max-width: 18.75rem;
+}
+
+.other-students-text {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 40rem) {
+
+    .single-student-main {
+        max-width: 65rem;
+        margin: 2rem auto;
+    }
+    .school-student .post-thumbnail {
+        display: inline;
+        position: absolute;
+        right: 0;
+        img {
+            max-width: 18.75rem;
+        }
+        
+    }
+    .school-student .entry-content {
+        max-width: 50%;
+        p {
+            padding-bottom: 1rem;
+        }
+    }
+    
+}
+
+// taxonomy students page
+.taxonomy-single-student {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    margin: 0 auto;
+    a {
+        width: 100%;
+    }
+    img {
+        margin: 0 auto;
+        object-fit: contain;
+    }
+    .wp-block-button {
+        margin: 2rem auto;
+    }
+
+}
+
+@media (min-width: 40rem) {
+    .taxonomy-single-student {
+        img {
+            margin: 0;
+        }
+        p {
+            width: 60%;
+            padding-left: 2rem;
+        }
+        .wp-block-button {
+            margin: 2rem 0;
+        }
+    }
+}

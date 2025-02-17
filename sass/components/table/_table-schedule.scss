@@ -1,0 +1,39 @@
+.page-id-10{
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        tr{
+            display: flex;
+            flex-direction: column;
+        }
+        tbody{
+            tr:nth-child(odd) 
+            {
+                background-color:#eee; 
+            }
+        }
+    }
+   
+}
+
+@media screen and (min-width: 37.5rem) {
+.page-id-10
+    {  
+        table{
+            tr{
+                flex-direction: row;
+                justify-content: space-around;
+                td, th{
+                    flex: 1;
+                }
+            }
+        }
+        table, th, td {
+            padding: 1rem 0;
+        }
+        td,th{
+            text-align: center;
+            flex: 1;
+        }
+    } 
+}

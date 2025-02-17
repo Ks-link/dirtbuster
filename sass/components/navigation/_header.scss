@@ -1,0 +1,28 @@
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  .site-title {
+    font-size: 2rem;
+    width: 1rem;
+    margin: 0;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .site-header {
+    padding: 0 6rem;
+  }
+}

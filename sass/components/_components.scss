@@ -1,0 +1,46 @@
+@import '../abstracts/variables/colors';
+
+/* Navigation
+--------------------------------------------- */
+@import "navigation/navigation";
+@import "navigation/bottom-widget";
+@import "navigation/header";
+@import "navigation/footer";
+
+/* Posts and pages
+--------------------------------------------- */
+@import "content/posts-and-pages";
+
+/* blcok-group
+--------------------------------------------- */
+@import "block-group/block-group";
+
+/* Comments
+--------------------------------------------- */
+@import "comments/comments";
+
+/* Widgets
+--------------------------------------------- */
+@import "widgets/widgets";
+
+/* Media
+--------------------------------------------- */
+@import "media/media";
+
+/* Captions
+--------------------------------------------- */
+@import "media/captions";
+
+/* recent-news
+--------------------------------------------- */
+@import "news/news-article";
+@import "news/recent-news-section";
+@import "news/news-post";
+
+/* Galleries
+--------------------------------------------- */
+@import "media/galleries";
+
+/* Table
+--------------------------------------------- */
+@import "table/table-schedule";

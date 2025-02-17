@@ -1,0 +1,22 @@
+.site-main-staff-page {
+    max-width: 65rem;
+    margin: 1rem auto;
+}
+
+.staff-category-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 4rem;
+    h2 {
+        width: 100%;
+        margin: 1rem 0;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 40rem) {
+    .single-staff-content {
+        width: 48%;
+    }
+}

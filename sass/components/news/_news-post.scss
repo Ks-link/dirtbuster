@@ -1,0 +1,26 @@
+.blog .site-main article{
+    .entry-title{
+        font-size: 1.8rem;       
+    }
+
+    .entry-footer{
+        display: flex;
+        flex-direction: column;
+        a{
+            font-weight: 700;
+        }
+    }
+}
+@media screen and (min-width: 62.5rem) {
+    .blog .site-main article{
+        width: 70%;
+        margin: 0 auto;
+        span{
+            margin-right: 1rem;
+        }
+        .entry-footer{
+            flex-direction: row;
+        }
+   }
+
+}

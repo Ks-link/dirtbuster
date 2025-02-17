@@ -1,0 +1,12 @@
+body .is-layout-flex{
+    .wp-block-group__inner-container{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 49.125rem) {
+    body .is-layout-flex{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}

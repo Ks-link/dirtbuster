@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+h1{
+	font-size: 2.5rem;
+}
+h2{
+	font-size: 2rem;
+}
+h3{
+	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 62.5rem) {
+	.blog{
+		header{
+			h1{
+				margin: 0 auto;
+				width: 70%;
+			}
+		}
+	}
+
+}
+

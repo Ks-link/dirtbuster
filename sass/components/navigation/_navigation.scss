@@ -1,0 +1,149 @@
+.main-navigation {
+  display: block;
+  ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    .sub-menu {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 100%;
+      left: -999em;
+      z-index: 99999;
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+      display: block;
+    }
+  }
+
+  li {
+    .sub-menu {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      li {
+        a {
+          width: 100%;
+          padding: 0.5rem;
+          background-color: hsl(0, 0%, 24%);
+
+        }
+      }
+    }
+    
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+
+  
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+.main-navigation.toggled ul {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  background: $color__black;
+  li {
+    text-align: center;
+
+    a {
+      padding: 1rem 0;
+      color: $color__white;
+      font-weight: 500;
+    }
+  }
+  .sub-menu {
+    background-color: hsl(0, 0%, 24%);
+    position: static;
+    margin: 1rem 0;
+    display: block;
+    li {
+      width: 100%;
+      a {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    line-height: 3rem;    
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    li {
+      position: relative;
+      a {
+        color: $color__white;
+        font-weight: 600;
+        padding: 0 1rem;
+      }
+      &:hover > a,
+      &.focus > a {
+        background-color: skyblue;
+      }
+    }
+   
+    li:hover > .sub-menu,
+    li.focus > .sub-menu {
+      left: 0;
+      width: 7rem;
+      display: block;
+    }
+  
+  
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a,
+    .current-menu-ancestor > a {
+      background-color: skyblue;
+      padding: 0rem 0.5rem;
+    }
+  }
+
+
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  .site-main & {
+    margin: 0 0 1.5em;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-previous {
+    flex: 1 0 50%;
+  }
+
+  .nav-next {
+    text-align: end;
+    flex: 1 0 50%;
+  }
+}
