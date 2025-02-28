@@ -27,7 +27,6 @@
 					printf( esc_html__( 'Theme: %1$s by %2$s.', 'school-theme' ), 'school-theme', '<a href="http://www.kaleblink.com">Kaleb Link</a>' );
 					?>
 				</p>
-				<p>Photo courtesy to <a href="https://www.shopify.com/stock-photos">Burst</a></p>
 			</section>
 			<section class="link-section">
 				<h3>Links</h3>
